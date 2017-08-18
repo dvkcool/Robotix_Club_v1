@@ -1,4 +1,5 @@
 <resources>
+    <!-- Do not modify these in any case please -->
     <string name="app_name">Robotix_Club_v1</string>
     <string name="title_activity_homepage">Homepage</string>
     <string name="action_settings">Settings</string>
