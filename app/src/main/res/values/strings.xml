@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Robotix_Club_v1</string>
+
+    <!-- ActionBar Strings  -->
+    <string name="call_us">Call</string>
+    <string name="logout">LogOut</string>
+    <string name="AboutUs">About Us</string>
+    <string name="action_home">Home</string>
+    <string name="events">Events</string>
+
 </resources>
