@@ -12,4 +12,11 @@
     <string name="AboutUs">About Us</string>
     <string name="action_home">Home</string>
     <string name="events">Events</string>
+    <string name="login_email_label">Login with Email</string>
+    <string name="login_phone_label">Login with Phone Number</string>
+    <string name="account">Account</string>
+    <string name="id_label">Account ID</string>
+    <string name="phone_label">Phone Number</string>
+    <string name="email_label">Email</string>
+    <string name="logout_label">Log Out</string>
 </resources>

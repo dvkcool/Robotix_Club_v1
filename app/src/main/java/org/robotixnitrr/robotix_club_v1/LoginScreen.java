@@ -70,7 +70,7 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     private void launchAccountActivity() {
-        Intent intent = new Intent(this, homepage.class);
+        Intent intent = new Intent(this, AccountActivity.class);
         startActivity(intent);
         finish();
     }
