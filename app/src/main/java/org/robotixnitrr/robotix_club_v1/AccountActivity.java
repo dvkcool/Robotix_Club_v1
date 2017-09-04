@@ -74,7 +74,7 @@ public class AccountActivity extends AppCompatActivity {
     }
 
     private String formatPhoneNumber(String phoneNumber) {
-       
+
         try {
             PhoneNumberUtil pnu = PhoneNumberUtil.getInstance();
             Phonenumber.PhoneNumber pn = pnu.parse(phoneNumber, Locale.getDefault().getCountry());

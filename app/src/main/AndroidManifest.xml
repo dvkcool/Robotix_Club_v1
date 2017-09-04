@@ -48,9 +48,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".homepage"
-            android:screenOrientation="portrait" />
         <activity android:name=".AccountActivity"></activity>
     </application>
 
