@@ -1,8 +1,8 @@
 package org.robotixnitrr.robotix_club_v1;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,17 +23,15 @@ public class AccountActivity extends AppCompatActivity {
     TextView id;
     TextView infoLabel;
     TextView info;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-
         id = (TextView) findViewById(R.id.id);
         infoLabel = (TextView) findViewById(R.id.info_label);
         info = (TextView) findViewById(R.id.info);
-		
+
         AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {
             @Override
             public void onSuccess(final Account account) {
@@ -65,7 +63,6 @@ public class AccountActivity extends AppCompatActivity {
             }
         });
     }
-
     public void onLogout(View view) {
         // logout of Account Kit
         AccountKit.logOut();
@@ -90,5 +87,4 @@ public class AccountActivity extends AppCompatActivity {
         }
         return phoneNumber;
     }
-
 }
