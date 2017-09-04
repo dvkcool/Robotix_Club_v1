@@ -35,19 +35,17 @@ public class AccountActivity extends AppCompatActivity {
         AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {
             @Override
             public void onSuccess(final Account account) {
-                // Get Account Kit ID
+
                 String accountKitId = account.getId();
                 id.setText(accountKitId);
 
                 PhoneNumber phoneNumber = account.getPhoneNumber();
                 if (account.getPhoneNumber() != null) {
-                    // if the phone number is available, display it
                     String formattedPhoneNumber = formatPhoneNumber(phoneNumber.toString());
                     info.setText(formattedPhoneNumber);
                     infoLabel.setText(R.string.phone_label);
                 }
                 else {
-                    // if the email address is available, display it
                     String emailString = account.getEmail();
                     info.setText(emailString);
                     infoLabel.setText(R.string.email_label);
@@ -57,14 +55,14 @@ public class AccountActivity extends AppCompatActivity {
 
             @Override
             public void onError(final AccountKitError error) {
-                // display error
+
                 String toastMessage = error.getErrorType().getMessage();
                 Toast.makeText(AccountActivity.this, toastMessage, Toast.LENGTH_LONG).show();
             }
         });
     }
     public void onLogout(View view) {
-        // logout of Account Kit
+
         AccountKit.logOut();
         launchLoginActivity();
     }
@@ -76,7 +74,7 @@ public class AccountActivity extends AppCompatActivity {
     }
 
     private String formatPhoneNumber(String phoneNumber) {
-        // helper method to format the phone number for display
+       
         try {
             PhoneNumberUtil pnu = PhoneNumberUtil.getInstance();
             Phonenumber.PhoneNumber pn = pnu.parse(phoneNumber, Locale.getDefault().getCountry());
