@@ -58,11 +58,6 @@ String mob="", email="", userid;
                 Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
                 break;
             }
-            if (n.length() == 0) {
-                String toastMessage = "Please enter your name";
-                Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
-                break;
-            }
             if (c.length() == 0) {
                 String toastMessage = "Please enter your college";
                 Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
@@ -78,8 +73,19 @@ String mob="", email="", userid;
                 Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
                 break;
             }
+            if (se.length() > 2) {
+                String toastMessage = "Please enter your valid semester e.g. 1, 2, 3,.., 8";
+                Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
+                break;
+            }
+
             if (m.length() == 0) {
                 String toastMessage = "Please enter your mobile number";
+                Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
+                break;
+            }
+            if (m.length() > 10) {
+                String toastMessage = "Please enter valid mobile number";
                 Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
                 break;
             }
