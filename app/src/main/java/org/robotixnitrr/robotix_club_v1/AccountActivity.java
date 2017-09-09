@@ -37,8 +37,19 @@ public class AccountActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+/*
+        ActionBar actionBar = getSupportActionBar();// for displaying menu button
 
 
+        if (actionBar != null) {
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+            actionBar.setDisplayShowTitleEnabled(false);
+
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
+
+*/
 
         name = (TextView) findViewById(R.id.name);
         infoLabel = (TextView) findViewById(R.id.info_label);

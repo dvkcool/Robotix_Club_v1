@@ -23,4 +23,11 @@
 
     <!--Navigation Bar and ToolBar Strings -->
     <string name="phonenumber">7804944206</string>
+
+
+    <!--For checking errors -->
+    <string name="error_field_required">this field is required</string>
+    <string name="error_invalid_email">Email is in valid</string>
+
+
 </resources>
