@@ -3,7 +3,6 @@ package org.robotixnitrr.robotix_club_v1;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -24,7 +23,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Locale;
 
-public class AccountActivity extends AppCompatActivity {
+public class AccountActivity extends BaseActivity {
 
 
     TextView infoLabel;
@@ -38,6 +37,8 @@ public class AccountActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+
+
 
         name = (TextView) findViewById(R.id.name);
         infoLabel = (TextView) findViewById(R.id.info_label);
