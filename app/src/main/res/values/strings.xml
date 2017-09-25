@@ -28,6 +28,40 @@
     <!--For checking errors -->
     <string name="error_field_required">this field is required</string>
     <string name="error_invalid_email">Email is in valid</string>
+    <!--About Us-->
+
+    <string name="ourmission">Our Mission</string>
+    <string name="ourgoal">Our Goal</string>
+    <string name="ourvision">Our Vision</string>
+    <string name="play">play</string>
+    <string name="ourmentor">Our Mentor</string>
+    <string name="aboutus">ABOUT US</string>
+    <string name="website">www.robotixnitrr.org</string>
+    <string name="transport">TRANSPORTS</string>
+    <string name="missionstext">
+        We at Robotix Club, invovle ourselves in
+        various activities ranging from lectures to
+        workshops and competitions. Our
+        mission is to make robotics an everyday phenomenon
+        and spread the knowledge about it.
+</string>
+    <string name="visiontext">
+        Robotics today is a field where a lot is
+        happening. Not many things can be
+        compared by a human brain. With a vision of
+        involving as many students as it can,
+        in various activities relating to a
+        robot development, we continue to grow.
+
+    </string>
+    <string name="goaltext">
+        The ultimate goal of Robotix Club NIT
+        Raipur is to educate maximum number of students.
+        Create a hype of robotics.
+        We want to participate in as many competitions as we can and keep learining all the while.
+    </string>
+    //events and workshop
+    <string name="event">EVENTS AND WORKSHOP</string>
 
 
 </resources>
