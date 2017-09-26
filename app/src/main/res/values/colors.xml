@@ -9,6 +9,9 @@
     <color name="accountText">#61727f</color>
     <color name="accountLogoutLabel">#fc6240</color>
 
+    <color name="skyblue">#b5e3ea</color>
+    <color name="greyblack">#343434</color>
+
     <color name="ak_background">#d5f0ec</color>
     <color name="ak_text">#61727f</color>
     <color name="ak_buttonBackground">#09d4b6</color>
