@@ -1,19 +1,15 @@
 package org.robotixnitrr.robotix_club_v1;
 
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -47,12 +43,13 @@ public abstract class BaseActivity extends AppCompatActivity implements Navigati
 
     private void changePage(int pos) {
 
-        Log.v("my ","before clicked on it");
+        Log.v("BaseActivity","before clicked on it");
         switch (pos) {
             // example Use:
             //   case R.id.nav_item_b: startActivity(new Intent(this, ActivityB.class)); break;
             //   case R.id.nav_item_c: startActivity(new Intent(this, ActivityC.class)); break;
             case R.id.nav_home: startActivity(new Intent(this, LoginScreen.class)); break;
+            case R.id.nav_about_us: startActivity(new Intent(this,About_us.class)); break;
 
         }
 
@@ -176,17 +173,17 @@ public abstract class BaseActivity extends AppCompatActivity implements Navigati
         close = true;
     }
 
-    @Override
-    public void setSupportActionBar(@Nullable Toolbar toolbar) {
-        super.setSupportActionBar(toolbar);
-        // TODO Auto-generated method stub
-            ActionBar actionBar = getSupportActionBar();
-            actionBar.setHomeButtonEnabled(true);
-            actionBar.setDisplayHomeAsUpEnabled(false);
-            actionBar.setDisplayShowHomeEnabled(false);
-            actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
-            actionBar.setTitle("Robotix Club App");
-            actionBar.show();
-    }
+//    @Override
+//    public void setSupportActionBar(@Nullable Toolbar toolbar) {
+//        super.setSupportActionBar(toolbar);
+//        // TODO Auto-generated method stub
+//            ActionBar actionBar = getActionBar();
+//            actionBar.setHomeButtonEnabled(true);
+//            actionBar.setDisplayHomeAsUpEnabled(false);
+//            actionBar.setDisplayShowHomeEnabled(false);
+//            actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
+//            actionBar.setTitle("Robotix Club App");
+//            actionBar.show();
+//    }
 }
 
