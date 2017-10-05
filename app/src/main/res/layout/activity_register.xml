@@ -154,15 +154,15 @@
         android:id="@+id/nm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/clg"
+        app:layout_constraintLeft_toLeftOf="@+id/clg"
         app:layout_constraintRight_toRightOf="@+id/clg"
+        tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="22dp"
-        app:layout_constraintLeft_toLeftOf="@+id/clg" />
+        tools:layout_constraintRight_creator="1" />
 
     <EditText
         android:id="@+id/clg"

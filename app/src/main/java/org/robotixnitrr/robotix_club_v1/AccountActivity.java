@@ -101,6 +101,11 @@ public class AccountActivity extends BaseActivity {
         finish();
     }
 
+    public void n_wors(View view){
+        Intent intent = new Intent(this, NewWorkshops.class);
+        startActivity(intent);
+    }
+
     private String formatPhoneNumber(String phoneNumber) {
 
         try {
