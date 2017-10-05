@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="org.robotixnitrr.robotix_club_v1.LoginScreen">
-
         <ImageView
             android:id="@+id/background"
             android:layout_width="0dp"

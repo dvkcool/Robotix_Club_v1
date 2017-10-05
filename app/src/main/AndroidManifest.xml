@@ -41,7 +41,8 @@
         </activity>
         <activity
             android:name=".LoginScreen"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginpageTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

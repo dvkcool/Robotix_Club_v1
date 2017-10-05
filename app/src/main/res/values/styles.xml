@@ -6,7 +6,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <!-- Don't change this please -->
+    <style name="LoginpageTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
     <style name="AppLoginTheme" parent="Theme.AccountKit">
         <item name="com_accountkit_background_color">@color/ak_background</item>
         <item name="com_accountkit_text_color">@color/ak_text</item>
