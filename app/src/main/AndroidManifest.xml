@@ -4,6 +4,7 @@
     package="org.robotixnitrr.robotix_club_v1">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo1"
@@ -20,7 +21,6 @@
         <meta-data
             android:name="com.facebook.accountkit.ClientToken"
             android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
-
 
         <activity
             android:name="com.facebook.accountkit.ui.AccountKitActivity"
@@ -53,7 +53,8 @@
         <activity android:name=".Register" />
         <activity android:name=".About_us" />
         <activity android:name=".NewWorkshops" />
-        <activity android:name=".news"></activity>
+        <activity android:name=".news" />
+        <activity android:name=".Works_Detailer"></activity>
     </application>
 
 </manifest>

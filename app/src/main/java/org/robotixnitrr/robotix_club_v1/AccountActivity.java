@@ -103,6 +103,7 @@ public class AccountActivity extends BaseActivity {
 
     public void n_wors(View view){
         Intent intent = new Intent(this, NewWorkshops.class);
+        intent.putExtra("userid", s);
         startActivity(intent);
     }
 

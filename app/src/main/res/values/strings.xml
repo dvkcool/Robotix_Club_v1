@@ -45,6 +45,7 @@
         mission is to make robotics an everyday phenomenon
         and spread the knowledge about it.
 </string>
+    <string name="userid">""</string>
     <string name="visiontext">
         Robotics today is a field where a lot is
         happening. Not many things can be

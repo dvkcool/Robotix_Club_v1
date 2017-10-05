@@ -1,6 +1,7 @@
 package org.robotixnitrr.robotix_club_v1;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,11 +24,13 @@ public class NewWorkshops extends AppCompatActivity {
 RecyclerView recyclerview;
     ProgressDialog dialog;
     Wor_Adapter w1;
+    String id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_workshops);
-
+         Intent intent = getIntent();
+        id = intent.getStringExtra("userid");
 
         dialog = ProgressDialog.show(this, "Loading", "Please wait...", true);
         con cq = new con();
@@ -40,6 +43,8 @@ RecyclerView recyclerview;
     }
 ResultSet r2;
     String wor_list[]= new String[1000];
+    String wor_img[]= new String[1000];
+    String wor_des[]= new String[1000];
     int length;
     class con extends AsyncTask<Void, Void, Boolean> {
         @Override
@@ -63,6 +68,8 @@ ResultSet r2;
                 int j=0;
                 while(r.next()){
                     wor_list[j]= r.getString(1);
+                    wor_img[j] = r.getString(2);
+                    wor_des[j] = r.getString(3);
                     j++;
 
                 }
@@ -101,7 +108,15 @@ String[] w_list;
 
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(NewWorkshops.this, "Workshop selected "+wor_list[position], Toast.LENGTH_LONG).show();
+
+                              Intent intent = new Intent(NewWorkshops.this, Works_Detailer.class);
+                              intent.putExtra("name", wor_list[position]);
+                              intent.putExtra("img", wor_img[position]);
+                              intent.putExtra("desc", wor_des[position]);
+                                intent.putExtra("id", id);
+                              startActivity(intent);
+
+
                 }
             });
         }
