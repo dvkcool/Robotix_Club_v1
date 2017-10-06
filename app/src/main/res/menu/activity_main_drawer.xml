@@ -15,6 +15,10 @@
             android:title="@string/events"
             android:id="@+id/Events" />
         <item
+            android:title="Workshop"
+            android:id="@+id/nav_workshops"
+            />
+        <item
         android:title="@string/logout"
         android:id="@+id/logout" />
 
