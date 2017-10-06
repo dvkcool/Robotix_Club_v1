@@ -3,32 +3,21 @@ package org.robotixnitrr.robotix_club_v1;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
-import android.widget.MultiAutoCompleteTextView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.facebook.accountkit.Account;
-import com.facebook.accountkit.AccountKit;
-import com.facebook.accountkit.AccountKitCallback;
-import com.facebook.accountkit.AccountKitError;
-import com.facebook.accountkit.PhoneNumber;
-import com.google.i18n.phonenumbers.NumberParseException;
-import com.google.i18n.phonenumbers.PhoneNumberUtil;
-import com.google.i18n.phonenumbers.Phonenumber;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.Locale;
 
-public class Works_Detailer extends AppCompatActivity {
+public class Works_Detailer extends AppCompatActivity{
 WebView vw;
     TextView nm;
     EditText des;
@@ -36,6 +25,15 @@ WebView vw;
     String user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        ActionBar actionBar = getSupportActionBar();// for displaying menu button
+        if (actionBar != null) {
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+            actionBar.setTitle("Workshops");
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_works__detailer);
         vw = (WebView) findViewById(R.id.imagevi);

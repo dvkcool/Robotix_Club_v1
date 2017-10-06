@@ -3,8 +3,8 @@ package org.robotixnitrr.robotix_club_v1;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -20,17 +20,26 @@ import java.sql.Statement;
 /**
  * Created by dvk on 26/09/17.
  */
-public class NewWorkshops extends AppCompatActivity {
+public class NewWorkshops extends BaseActivity {
 RecyclerView recyclerview;
     ProgressDialog dialog;
     Wor_Adapter w1;
     String id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_workshops);
          Intent intent = getIntent();
         id = intent.getStringExtra("userid");
+        ActionBar actionBar = getSupportActionBar();// for displaying menu button
+        if (actionBar != null) {
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+            actionBar.setTitle("Workshops");
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
 
         dialog = ProgressDialog.show(this, "Loading", "Please wait...", true);
         con cq = new con();
