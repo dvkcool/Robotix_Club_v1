@@ -1,11 +1,14 @@
 package org.robotixnitrr.robotix_club_v1;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
@@ -31,29 +34,35 @@ import java.util.Locale;
 public class Works_Detailer extends AppCompatActivity {
 WebView vw;
     TextView nm;
-    EditText des;
+  EditText des;
     ProgressDialog dialog;
+
     String user;
+
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_works__detailer);
         vw = (WebView) findViewById(R.id.imagevi);
         nm = (TextView) findViewById(R.id.name);
         des = (EditText) findViewById(R.id.descr);
+        des.setKeyListener(null);
         Intent intent= getIntent();
+
         vw.setWebViewClient(new WebViewClient());
          String url = intent.getStringExtra("img");
+        vw.getSettings().setLoadWithOverviewMode(true);
+        vw.getSettings().setUseWideViewPort(true);
         vw.loadUrl(url);
         des.setText(intent.getStringExtra("desc"));
+
         nm.setText(intent.getStringExtra("name"));
         user = intent.getStringExtra("id");
         dialog = ProgressDialog.show(this, "Loading", "Please wait...", true);
         dialog.dismiss();
     }
-
-
-    public String cr_st(){
+   public String cr_st(){
         String s1="insert into regis values(\""+ nm.getText()+"\", \"";
 
         s1 = s1+ user +"\");";
