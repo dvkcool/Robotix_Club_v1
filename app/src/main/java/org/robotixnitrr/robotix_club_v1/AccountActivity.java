@@ -106,7 +106,10 @@ public class AccountActivity extends BaseActivity {
         intent.putExtra("userid", s);
         startActivity(intent);
     }
-
+    public void n_news(View view){
+        Intent intent = new Intent(this, news.class);
+        startActivity(intent);
+    }
     private String formatPhoneNumber(String phoneNumber) {
 
         try {
@@ -154,6 +157,8 @@ public class AccountActivity extends BaseActivity {
                         n = r.getString(2);
                     }
                 }
+                cn.close();
+                st.close();
             }
             catch (Exception e)
             {

@@ -64,6 +64,8 @@
     </string>
     //events and workshop
     <string name="event">EVENTS AND WORKSHOP</string>
+    <string name="ne_head">New in Robotics World</string>
+    <string name="ne_ro">Click to see latest in robo World</string>
 
 
 </resources>

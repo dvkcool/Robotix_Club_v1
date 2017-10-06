@@ -50,7 +50,7 @@ RecyclerView recyclerview;
         recyclerview.setAdapter(w1);
         recyclerview.setLayoutManager(new LinearLayoutManager(this));
     }
-ResultSet r2;
+
     String wor_list[]= new String[1000];
     String wor_img[]= new String[1000];
     String wor_des[]= new String[1000];
@@ -73,7 +73,6 @@ ResultSet r2;
 
 
                 ResultSet r= st.executeQuery("select * from workshop;");
-                r2 =r;
                 int j=0;
                 while(r.next()){
                     wor_list[j]= r.getString(1);
@@ -83,6 +82,8 @@ ResultSet r2;
 
                 }
                 length =j;
+                cn.close();
+                st.close();
             }
             catch (Exception e)
             {

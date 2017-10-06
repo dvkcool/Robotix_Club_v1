@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/profile_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         android:id="@+id/view"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintLeft_creator="1" />
@@ -83,7 +83,7 @@
         android:id="@+id/logout_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="82dp"
+        android:layout_marginBottom="107dp"
         android:text="@string/logout_label"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:textColor="@color/accountLogoutLabel"
@@ -100,7 +100,7 @@
         android:id="@+id/wor_new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="59dp"
         android:text="@string/wor_new"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:textColor="@color/accountLogoutLabel"
@@ -111,8 +111,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/news_new"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-14dp"
+        android:onClick="n_news"
+        android:text="@string/ne_ro"
+        android:textAllCaps="false"
+        android:textColor="@color/accountLogoutLabel"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintHorizontal_bias="0.575" />
+        tools:layout_constraintRight_creator="1" />
 
 </android.support.constraint.ConstraintLayout>
     <android.support.design.widget.NavigationView

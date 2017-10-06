@@ -47,6 +47,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginStart="24dp"
+        android:scrollbars = "vertical"
         android:layout_marginTop="11dp"
         android:editable="false"
         android:textColor="@color/colorAccent"
