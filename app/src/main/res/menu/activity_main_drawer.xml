@@ -13,7 +13,7 @@
 
         <item
             android:title="@string/events"
-            android:id="@+id/Events" />
+            android:id="@+id/nav_events" />
         <item
             android:title="Workshop"
             android:id="@+id/nav_workshops"
