@@ -49,7 +49,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Navigati
             //   case R.id.nav_item_b: startActivity(new Intent(this, ActivityB.class)); break;
             //   case R.id.nav_item_c: startActivity(new Intent(this, ActivityC.class)); break;
             case R.id.nav_home: startActivity(new Intent(this, LoginScreen.class)); break;
-            case R.id.nav_about_us: startActivity(new Intent(this,About_us.class)); break;
+            case R.id.nav_about_us: startActivity(new Intent(this,EventsActivity.class)); break;
             case R.id.nav_workshops: startActivity(new Intent(this,NewWorkshops.class));break;
             case R.id.nav_events: startActivity(new Intent(this,news.class)); break;
 
