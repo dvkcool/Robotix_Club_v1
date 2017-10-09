@@ -49,20 +49,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AccountActivity" />
-        <activity android:name=".Register" />
-        <activity android:name=".About_us" />
-        <activity android:name=".NewWorkshops" />
-        <activity android:name=".news" />
-        <activity android:name=".Works_Detailer" />
+        <activity android:name=".AccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Register"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".About_us"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewWorkshops"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".news"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Works_Detailer"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".News_desc"
             android:label="@string/ne_head"
-            android:theme="@style/NewspageTheme"></activity>
+            android:theme="@style/NewspageTheme"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".EventsActivity"
             android:label="@string/title_activity_events"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Fullimage"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape"/>
+
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@
     <color name="accountLabel">#7d97ad</color>
     <color name="accountText">#61727f</color>
     <color name="accountLogoutLabel">#fc6240</color>
-    <color name ="news_header">#FFE97F</color>
+    <color name="news_header">#FFE97F</color>
     <color name="ntext">#fc6240</color>
     <color name="skyblue">#b5e3ea</color>
     <color name="greyblack">#343434</color>
@@ -22,5 +22,7 @@
     <color name="ak_inputText">#7d97ad</color>
     <color name="ak_statusBar">#00c5a5</color>
     <color name="ak_icon">#09d4b6</color>
+
+    <color name="black_overlay">#66000000</color>
 
 </resources>

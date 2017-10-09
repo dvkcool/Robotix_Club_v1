@@ -36,7 +36,7 @@ WebView vw;
     TextView nm;
   EditText des;
     ProgressDialog dialog;
-
+String url;
     String user;
 
     @Override
@@ -51,7 +51,7 @@ WebView vw;
         Intent intent= getIntent();
 
         vw.setWebViewClient(new WebViewClient());
-         String url = intent.getStringExtra("img");
+          url = intent.getStringExtra("img");
         vw.getSettings().setLoadWithOverviewMode(true);
         vw.getSettings().setUseWideViewPort(true);
         vw.loadUrl(url);
@@ -111,5 +111,10 @@ WebView vw;
         con ce = new con();
         ce.execute();
 
+    }
+    public void imgfull(View view){
+        Intent intent = new Intent(this, Fullimage.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
     }
 }
